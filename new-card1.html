@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+
+
+    <style>
+        /* customizable snowflake styling */
+        .snowflake {
+            color: #fff;
+            font-size: 1em;
+            font-family: Arial, sans-serif;
+            text-shadow: 0 0 5px #000;
+        }
+
+        @-webkit-keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+
+            100% {
+                top: 100%
+            }
+        }
+
+        @-webkit-keyframes snowflakes-shake {
+
+            0%,
+            100% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0)
+            }
+
+            50% {
+                -webkit-transform: translateX(80px);
+                transform: translateX(80px)
+            }
+        }
+
+        @keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+
+            100% {
+                top: 100%
+            }
+        }
+
+        @keyframes snowflakes-shake {
+
+            0%,
+            100% {
+                transform: translateX(0)
+            }
+
+            50% {
+                transform: translateX(80px)
+            }
+        }
+
+        .snowflake {
+            position: fixed;
+            top: -10%;
+            z-index: 9999;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: default;
+            -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+            -webkit-animation-duration: 10s, 3s;
+            -webkit-animation-timing-function: linear, ease-in-out;
+            -webkit-animation-iteration-count: infinite, infinite;
+            -webkit-animation-play-state: running, running;
+            animation-name: snowflakes-fall, snowflakes-shake;
+            animation-duration: 10s, 3s;
+            animation-timing-function: linear, ease-in-out;
+            animation-iteration-count: infinite, infinite;
+            animation-play-state: running, running
+        }
+
+        .snowflake-one {
+            left: 1%;
+            -webkit-animation-delay: 0s, 0s;
+            animation-delay: 0s, 0s
+        }
+
+        .snowflake-two {
+            left: 10%;
+            -webkit-animation-delay: 1s, 1s;
+            animation-delay: 1s, 1s
+        }
+
+        .snowflake-three {
+            left: 20%;
+            -webkit-animation-delay: 6s, .5s;
+            animation-delay: 6s, .5s
+        }
+
+        .snowflake-four {
+            left: 30%;
+            -webkit-animation-delay: 4s, 2s;
+            animation-delay: 4s, 2s
+        }
+
+        .snowflake-five {
+            left: 40%;
+            -webkit-animation-delay: 2s, 2s;
+            animation-delay: 2s, 2s
+        }
+
+        .snowflake-six {
+            left: 50%;
+            -webkit-animation-delay: 8s, 3s;
+            animation-delay: 8s, 3s
+        }
+
+        .snowflake-seven {
+            left: 60%;
+            -webkit-animation-delay: 6s, 2s;
+            animation-delay: 6s, 2s
+        }
+
+        .snowflake-eight {
+            left: 70%;
+            -webkit-animation-delay: 2.5s, 1s;
+            animation-delay: 2.5s, 1s
+        }
+
+        .snowflake-nine {
+            left: 80%;
+            -webkit-animation-delay: 1s, 0s;
+            animation-delay: 1s, 0s
+        }
+
+        .snowflake-ten {
+            left: 90%;
+            -webkit-animation-delay: 3s, 1.5s;
+            animation-delay: 3s, 1.5s
+        }
+
+        .snowflake-eleven {
+            left: 25%;
+            -webkit-animation-delay: 2s, 0s;
+            animation-delay: 2s, 0s
+        }
+
+        .snowflake-twelve {
+            left: 65%;
+            -webkit-animation-delay: 4s, 2.5s;
+            animation-delay: 4s, 2.5s
+        }
+
+        html {
+            height: 100vh;
+            font-size: 2vh;
+            overflow: hidden;
+        }
+
+        body {
+            /* background-image: url(christmas-2892235_1920.png); */
+            background-image: url(https://www.icetrak.com/images/xmas-card/xmas-2928142.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+            margin-left: 3rem;
+            margin-right: 30rem;
+        }
+
+        .maintext {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake snowflake-one">
+            ❅
+        </div>
+        <div class="snowflake snowflake-two">
+            ❆
+        </div>
+        <div class="snowflake snowflake-three">
+            ❅
+        </div>
+        <div class="snowflake snowflake-four">
+            ❆
+        </div>
+        <div class="snowflake snowflake-five">
+            ❅
+        </div>
+        <div class="snowflake snowflake-six">
+            ❆
+        </div>
+        <div class="snowflake snowflake-seven">
+            ❅
+        </div>
+        <div class="snowflake snowflake-eight">
+            ❆
+        </div>
+        <div class="snowflake snowflake-nine">
+            ❅
+        </div>
+        <div class="snowflake snowflake-ten">
+            ❆
+        </div>
+        <div class="snowflake snowflake-eleven">
+            ❅
+        </div>
+        <div class="snowflake snowflake-twelve">
+            ❆
+        </div>
+    </div>
+
+    <main style="color: white;">
+        <img src=https://www.icetrak.com/images/xmas-card/icetrak_logo.png crossorigin="anonymous" height="200">
+        <h3>MERRY CHRISTMAS and HAPPY NEW YEAR</h3>
+        <p>from all at Icetrak</p>
+        <hr />
+        <br />
+        <p style="text-align: center;">Our offices will be closed from 1pm on the 24th December until 9am on the 2nd January.<br /> Don't forget to contact us to make sure your account is<br /> kept topped up over the holiday period :-) </p>
+    </main>
+
+</body>
+
+</html>
